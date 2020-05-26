@@ -73,21 +73,11 @@ animateBadge(void) {
 
     // This shows how to get user input
     switch(getControl()) {
-      case(ESCAPE):
-        displayClose();
-        return;
-      case(LEFT):
-        moveLeft();
-        break;
-      case(RIGHT):
-        moveRight();
-        break;
-      case(UP):
-        moveUp();
-        break;
-      case(DOWN):
-        moveDown();
-        break;
+      case(ESCAPE): displayClose(); return;
+      case(LEFT): moveLeft(); break;
+      case(RIGHT): moveRight(); break;
+      case(UP): moveUp(); break;
+      case(DOWN): moveDown(); break;
     }
   }
 }
